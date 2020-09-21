@@ -65,11 +65,6 @@ Na plataforma mobile, foi criada exclusivamente para o cliente consultar os pres
   
 ## 👨‍💻️ Como Usar  :
 
-### Credênciais do B.D
- - No arquivo **./GoBarber/backend/src/.env**, colocar as credênciais dos B.D da máquina utilizada
-    - linha 17, 18 e 19 = relacionado ao Banco de Dados Redis
-    - linha 22, 23 e 24 = relacionado ao Banco de Dados Relacional Postgres
-    - linha 27, 28 e 29 = relacionado ao Banco de Dados MongoDB
     
 ### Clonando e Acessando Projeto
 ```shell
@@ -77,7 +72,13 @@ $ git clone https://github.com/matheusjouan/GoBarber.git
 $ cd GoBarber
 ```
 
-# Iniciando o Servidor Backend (localhost:3333)
+### Credênciais do B.D
+ - No arquivo **./GoBarber/backend/src/.env**, colocar as credênciais dos B.D da máquina utilizada
+    - linha 17, 18 e 19 = relacionado ao Banco de Dados Redis
+    - linha 22, 23 e 24 = relacionado ao Banco de Dados Relacional Postgres
+    - linha 27, 28 e 29 = relacionado ao Banco de Dados MongoDB
+
+### Iniciando o Servidor Backend (localhost:3333)
 ```shell
 $ cd backend
 $ yarn install
@@ -89,14 +90,14 @@ $ yarn typeorm migration:run
 $ yarn dev:server
 ```
 
-# Iniciando a Aplicação Web (localhost:3000)
+### Iniciando a Aplicação Web (localhost:3000)
 ```shell
 $ cd web
 $ yarn install
 $ yarn start
 ```
 
-# Iniciando a Aplicação Mobile
+### Iniciando a Aplicação Mobile
 ```shell
 $ cd mobile
 $ yarn  install
