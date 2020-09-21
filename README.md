@@ -56,27 +56,55 @@ Na plataforma mobile, foi criada exclusivamente para o cliente consultar os pres
   - Axios;
   - Async Storage;
   
+- 📔 Padronização de Código:
+  - ESLint
+  - Prettier
+  - EditorConfig
+  
   ---
   
 ## 👨‍💻️ Como Usar  :
 
+### Credênciais do B.D
+ - No arquivo **./GoBarber/backend/src/.env**, colocar as credênciais dos B.D da máquina utilizada
+    - linha 17, 18 e 19 = relacionado ao Banco de Dados Redis
+    - linha 22, 23 e 24 = relacionado ao Banco de Dados Relacional Postgres
+    - linha 27, 28 e 29 = relacionado ao Banco de Dados MongoDB
+    
+### Clonando e Acessando Projeto
 ```shell
 $ git clone https://github.com/matheusjouan/GoBarber.git
 $ cd GoBarber
+```
 
 # Iniciando o Servidor Backend (localhost:3333)
+```shell
 $ cd backend
 $ yarn install
-$ yarn start
+
+## Criação das Tabelas - Postgres (criar a Database antes)
+$ yarn typeorm migration:run
+
+## Execução do backend
+$ yarn dev:server
+```
 
 # Iniciando a Aplicação Web (localhost:3000)
+```shell
 $ cd web
 $ yarn install
 $ yarn start
+```
 
-# Iniciando a Aplicação Mobile (expo)
+# Iniciando a Aplicação Mobile
+```shell
 $ cd mobile
 $ yarn  install
+
+## Execução do Emulador
+yarn android / yarn ios
+
+## Execução do Projeto
 $ yarn start
 ```
 
