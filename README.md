@@ -141,3 +141,8 @@ $ yarn start
      - [x] Visualização das datas disponveis para agendamento
   - [x] Criação Tela de Atualização do Perfil do prestador de serviço;
   
+  
+  ## Observação:
+   - Erro de importação da lib utilizada para teste unitário
+   - Arquivo: web//node_modules/@types/testing-library__react/node_modules/pretty-format/build/index.d.ts
+    - Trocar a importaçã **import type * as PrettyFormat from './types'** por **import * as PrettyFormat from './types'** 
